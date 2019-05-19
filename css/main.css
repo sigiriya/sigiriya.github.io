@@ -15,7 +15,7 @@
   .img_placestogo {
     max-width: 400px;
     max-height: 200px;
-  
+
   }
   .ravan_ul{
     width: 100%;
@@ -83,7 +83,7 @@
   .img_placestogo {
     max-width: 280px;
     max-height: 200px;
-  
+
   }
 
   .story p {
@@ -113,7 +113,7 @@
   .button span{
    font-size: 15px;
   }
-  
+
   .aboutking{
     max-height: 450px;
   }
@@ -129,7 +129,7 @@
   .img_placestogo {
     max-width: 250px;
     max-height: 140px;
-  
+
   }
 
   .story p {
@@ -529,14 +529,14 @@ label.light {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
 .kashyapaStory{
   margin: 0 10% 0 10%;
 }
 .ravanStory p{
   margin: 0 10% 0 10%;
-  
+
 }
 
 .button {
@@ -555,15 +555,14 @@ label.light {
   background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
   background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
   background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-
   font-family: 'Pacifico', Arial, sans-serif;
   line-height: 1;
- 
+
 }
 
 .button:hover span {
+  transform: rotate(5deg);
   background-color: #ec6a9c;
-  text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
 }
 .ravan_ul{
   width: 80%;
@@ -576,4 +575,3 @@ label.light {
   margin-left: 10%;
   margin-right: auto;
 }
-
