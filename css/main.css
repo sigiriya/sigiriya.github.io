@@ -1,0 +1,579 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+
+  .header,
+  .nav {
+    width: 100%;
+  }
+
+  .aboutking p {
+    font-size: 20px;
+  }
+  .img_placestogo {
+    max-width: 400px;
+    max-height: 200px;
+  
+  }
+  .ravan_ul{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header,
+  .nav {
+    width: 100%;
+    border-top: none;
+    flex-direction: column;
+
+  }
+  .aboutking{
+    max-height: 500px;
+  }
+
+  .nav li {
+    justify-content: center;
+    margin: auto;
+    padding-right: 0;
+    padding-right: 45px;
+  }
+
+.places{
+  margin: 0 20% 0 10%;
+}
+
+  .second_content .graffiti,
+  .second_content .paintings {
+    float: none;
+    width: 100%;
+  }
+
+  .paragraph .more_painting_button {
+    margin: 0 0 0 60px;
+  }
+
+  .footer {
+    width: 100%;
+    border-top: none;
+    flex-direction: column;
+
+  }
+
+  .footer li {
+    justify-content: center;
+    margin: auto;
+    padding-right: 0;
+    padding-right: 45px;
+  }
+
+  .footer_copyright {
+    margin: 0;
+  }
+
+  .gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .img_placestogo {
+    max-width: 280px;
+    max-height: 200px;
+  
+  }
+
+  .story p {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ravan_ul{
+    font-size: 14px;
+    width: 100%;
+  }
+  .ravan_p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+
+
+  .photos {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button span{
+   font-size: 15px;
+  }
+  
+  .aboutking{
+    max-height: 450px;
+  }
+  .videos a {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .places{
+    margin: 0 20% 0 10%;
+  }
+  .img_placestogo {
+    max-width: 250px;
+    max-height: 140px;
+  
+  }
+
+  .story p {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .poems_title {
+    text-align: justify;
+    max-width: 300px;
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .poemsTen {
+    font-size: 11px;
+  }
+  .ravan_ul{
+    font-size: 13px;
+    width: 100%;
+  }
+  .ravan_p{
+    font-size: 13px;
+  }
+
+}
+
+
+/******************************
+Additional Styling
+*******************************/
+
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  background: url('../img/background_image.png');
+
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  overflow: hidden;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: block;
+
+}
+
+.nav li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+div .img {
+  width: 100%;
+  max-height: 650px;
+  min-height: 300px
+}
+
+.readmore_button {
+
+  background-color: #5c8067;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.readmore_button_two {
+  padding: 1px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.more_painting_button {
+  padding: 1px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin: auto;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.aboutking {
+  color: white;
+  text-align: left;
+  padding: 10% 0 10% 0;
+  height: 650px;
+  background: linear-gradient(to bottom, transparent, black), #434a52 url('../img/sigiriya.jpg') no-repeat center;
+  background-size: cover;
+
+}
+
+.graffiti,
+.paintings {
+  width: 46.5%;
+  text-align: justify;
+}
+
+.graffiti {
+  float: left;
+}
+
+.paintings {
+  float: right;
+}
+
+.graffiti img,
+.paintings img {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  display: flex;
+  overflow: hidden;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.footer_copyright {
+  margin: 0;
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+
+.gallery_h1 {
+  text-align: center;
+  margin-top: 0%;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.photos img {
+  height: 200px;
+  max-width: 250px;
+  padding: 4px;
+  margin: auto;
+}
+
+.photos img:hover {
+  border: 1px solid #777;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.videos iframe {
+  padding: 10px;
+}
+.places{
+  margin: 0 20% 0 20%;
+}
+
+
+.img_placestogo {
+  width: 800px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Form */
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+.button_form {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+.story p {
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poems_title {
+  font-size: 20px;
+  margin: 0 20% 0 20%;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+}
+
+.poemsContent {
+  text-align: left;
+  padding: 10% 15% 10% 15%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.poems {
+  background-color: #DB9337;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poems h1 {
+  margin-top: 0%;
+}
+
+.aboutWe {
+  text-align: center;
+}
+
+.weimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.ravanImg {
+  opacity: 0.5;
+  width: 49%;
+}
+.ravanImg:hover{
+  color: yellow;
+  opacity: 1;
+}
+.kashyapaImg {
+  width: 49%;
+  opacity: 0.5;
+}
+.kashyapaImg:hover{
+  opacity: 1;
+}
+
+#boxContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+.story{
+  background-color:black;
+
+}
+.story h1{
+  margin-top: 0%;
+  color: white;
+  padding-top: 1%;
+}
+
+.backgroundTwo{
+  margin-top: 0%;
+  background: url(../img/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.kashyapaStory{
+  margin: 0 10% 0 10%;
+}
+.ravanStory p{
+  margin: 0 10% 0 10%;
+  
+}
+
+.button {
+  display: inline-block;
+  margin-top: 300px;
+  margin-left: 70px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.button span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+ 
+}
+
+.button:hover span {
+  background-color: #ec6a9c;
+  text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+.ravan_ul{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.ravan_h2{
+  margin-left: 10%;
+  margin-right: auto;
+}
+
