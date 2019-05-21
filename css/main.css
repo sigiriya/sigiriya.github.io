@@ -218,32 +218,26 @@ div .img {
 }
 
 .readmore_button_two {
-  padding: 1px;
+  padding: 10px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: gray;
   font-size: 15px;
   text-align: center;
   font-style: normal;
-  border-radius: 5px;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-bottom: 10px;
+  margin: auto;
   text-decoration: none;
   justify-content: center;
+  margin-left: 5px;
 }
 
-.more_painting_button {
-  padding: 1px;
+.more_painting_button:hover {
+  transform: rotate(5deg);
+  padding: 10px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: gray;
   font-size: 15px;
   text-align: center;
   font-style: normal;
-  border-radius: 5px;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin: auto;
   text-decoration: none;
   justify-content: center;
@@ -277,7 +271,7 @@ div .img {
 .paintings img {
   height: 400px;
   width: 100%;
-  border-radius: 10px;
+
 }
 
 .group:after {
@@ -304,6 +298,9 @@ div .img {
   font-size: 17px;
   text-transform: uppercase;
   display: block;
+}
+.footer a:hover{
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer_copyright {
@@ -539,7 +536,7 @@ label.light {
 
 }
 
-.button {
+.button_one {
   display: inline-block;
   margin-top: 300px;
   margin-left: 70px;
@@ -547,7 +544,7 @@ label.light {
   color: #000000;
 }
 
-.button span {
+.button_one span {
   display: inline-block;
   padding: 10px 20px;
   background-color: #000000;
@@ -560,10 +557,50 @@ label.light {
 
 }
 
-.button:hover span {
+.button_one:hover span {
   transform: rotate(5deg);
   background-color: #ec6a9c;
 }
+.button_two{
+  font-size: 20px;
+  color: #000000;
+}
+.button_two span{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+  margin-left: 20px;
+}
+.button_two:hover span{
+  transform: rotate(5deg);
+  background-color: #ec6a9c;
+}
+.button_three{
+  font-size: 20px;
+  color: #000000;
+}
+.button_three span{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+}
+.button_three:hover span{
+  transform: rotate(5deg);
+  background-color: #ec6a9c;
+}
+
 .ravan_ul{
   width: 80%;
   display: block;
