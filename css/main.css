@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1024px) {
+  .button_two {
+    display: none;
+  }
+  .button_three {
+    display: none;
+  }
+  .poems p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
 
   .header,
@@ -12,13 +26,29 @@
   .aboutking p {
     font-size: 20px;
   }
+
   .img_placestogo {
     max-width: 400px;
     max-height: 200px;
 
   }
-  .ravan_ul{
+
+  .ravan_ul {
     width: 100%;
+  }
+  .photos img:hover {
+    display: none;
+  }
+  .poems p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 14px;
+  }
+  .poemsContent ol li{
+    width: 125%;
+    margin-right: 5%;
+    margin-left: -15%;
+    font-size: 16px;
   }
 
 }
@@ -32,7 +62,8 @@
     flex-direction: column;
 
   }
-  .aboutking{
+
+  .aboutking {
     max-height: 500px;
   }
 
@@ -42,10 +73,6 @@
     padding-right: 0;
     padding-right: 45px;
   }
-
-.places{
-  margin: 0 20% 0 10%;
-}
 
   .second_content .graffiti,
   .second_content .paintings {
@@ -92,18 +119,33 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .ravan_ul{
+
+  .ravan_ul {
     font-size: 14px;
     width: 100%;
   }
-  .ravan_p{
+
+  .ravan_p {
     font-size: 14px;
   }
-  .contact_us iframe{
+
+  .contact_us iframe {
     text-align: center;
     width: 400px;
     height: 800px;
   }
+  .poems p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 14px;
+  }
+  .poemsContent ol li{
+    width: 125%;
+    margin-right: 5%;
+    margin-left: -15%;
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -115,22 +157,22 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .button span{
-   font-size: 15px;
+
+  .button span {
+    font-size: 15px;
   }
 
-  .aboutking{
+  .aboutking {
     max-height: 450px;
   }
+
   .videos a {
     width: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .places{
-    margin: 0 20% 0 10%;
-  }
+
   .img_placestogo {
     max-width: 250px;
     max-height: 140px;
@@ -151,24 +193,40 @@
     margin-left: 0%;
     margin-right: 0%;
   }
+  .poems p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 12px;
+  }
 
   .poemsTen {
     font-size: 11px;
   }
-  .ravan_ul{
+
+  .ravan_ul {
     font-size: 13px;
     width: 100%;
   }
-  .ravan_p{
+
+  .ravan_p {
     font-size: 13px;
   }
-  .contact_us iframe{
+
+  .contact_us iframe {
     text-align: center;
     width: 300px;
     height: 800px;
   }
+  .poemsContent ol li{
+    width: 125%;
+    margin-right: 5%;
+    margin-left: -20%;
+    font-size: 12px;
+  }
 
 }
+
+
 
 
 /******************************
@@ -178,8 +236,8 @@ Additional Styling
 body {
   margin: 0;
   font-family: 'Inconsolata', monospace;
-
-
+  background: url(/img/backgroundMain.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .logo {
@@ -265,6 +323,8 @@ div .img {
 
 .graffiti,
 .paintings {
+  padding-left: 3%;
+  padding-right: 3%;
   width: 46.5%;
   text-align: justify;
 }
@@ -309,7 +369,8 @@ div .img {
   text-transform: uppercase;
   display: block;
 }
-.footer a:hover{
+
+.footer a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -335,13 +396,14 @@ div .img {
 
 .photos img {
   height: 200px;
-  max-width: 250px;
+  width: 250px;
   padding: 4px;
-  margin: auto;
+  margin: 10px 0 0 25px;
 }
 
 .photos img:hover {
-  border: 1px solid #777;
+  transform: scale(1.5);
+  transition: .3s ease-in-out;
 }
 
 .videos {
@@ -353,14 +415,16 @@ div .img {
 .videos iframe {
   padding: 10px;
 }
-.places{
-  margin: 0 20% 0 20%;
+
+.places {
+  width: 95%;
+  margin: auto;
 }
 
 
 .img_placestogo {
   width: 800px;
-  height: 400px;
+  height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -373,7 +437,7 @@ div .img {
 }
 
 /* Form */
-.contact_us{
+.contact_us {
   margin-top: 20px;
   text-align: center;
 }
@@ -388,7 +452,7 @@ div .img {
 .poems_title {
   font-size: 20px;
   margin: 0 20% 0 20%;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
@@ -425,15 +489,18 @@ div .img {
   opacity: 0.5;
   width: 49%;
 }
-.ravanImg:hover{
+
+.ravanImg:hover {
   color: yellow;
   opacity: 1;
 }
+
 .kashyapaImg {
   width: 49%;
   opacity: 0.5;
 }
-.kashyapaImg:hover{
+
+.kashyapaImg:hover {
   opacity: 1;
 }
 
@@ -442,17 +509,19 @@ div .img {
   justify-content: space-between;
 
 }
-.story{
-  background-color:black;
+
+.story {
+  background-color: black;
 
 }
-.story h1{
+
+.story h1 {
   margin-top: 0%;
   color: white;
   padding-top: 1%;
 }
 
-.backgroundTwo{
+.backgroundTwo {
   margin-top: 0%;
   background: url(../img/background2.jpg);
   background-position: center;
@@ -460,10 +529,12 @@ div .img {
   background-size: cover;
 
 }
-.kashyapaStory{
+
+.kashyapaStory {
   margin: 0 10% 0 10%;
 }
-.ravanStory p{
+
+.ravanStory p {
   margin: 0 10% 0 10%;
 
 }
@@ -474,73 +545,97 @@ div .img {
   margin-left: 70px;
   font-size: 20px;
   color: #000000;
+  transition: all 0.5s;
+  cursor: pointer;
+
 }
 
 .button_one span {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  font-family: 'Pacifico', Arial, sans-serif;
+  background-color:green;
   line-height: 1;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
 
+}
+.button_one span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  margin-top: 8px;
+  margin-right: 10px;
+  right: -20px;
+  transition: 0.5s;
 }
 
 .button_one:hover span {
-  transform: rotate(5deg);
-  background-color: #ec6a9c;
+  padding-right: 40px;
+
 }
-.button_two{
+.button_one:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button_two {
   font-size: 20px;
   color: #000000;
 }
-.button_two span{
+
+.button_two span {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+  background-color: green;
   font-family: 'Pacifico', Arial, sans-serif;
   line-height: 1;
   margin-left: 20px;
 }
-.button_two:hover span{
-  transform: rotate(5deg);
-  background-color: #ec6a9c;
-}
-.button_three{
-  font-size: 20px;
-  color: #000000;
-}
-.button_three span{
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #000000;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-  background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-  font-family: 'Pacifico', Arial, sans-serif;
-  line-height: 1;
-}
-.button_three:hover span{
-  transform: rotate(5deg);
+
+.button_two:hover span {
   background-color: #ec6a9c;
 }
 
-.ravan_ul{
+.button_three {
+  font-size: 20px;
+  color: #000000;
+}
+
+.button_three span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  font-family: 'Pacifico', Arial, sans-serif;
+  line-height: 1;
+}
+
+.button_three:hover span {
+  background-color: #ec6a9c;
+}
+
+.ravan_ul {
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 
 }
-.ravan_h2{
+
+.ravan_h2 {
   margin-left: 10%;
   margin-right: auto;
+}
+
+.picsHover:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.picsHover:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
