@@ -22,6 +22,9 @@
   .nav {
     width: 100%;
   }
+  .photos img:hover {
+    pointer-events: none;
+  }
 
   .aboutking p {
     font-size: 20px;
@@ -36,9 +39,7 @@
   .ravan_ul {
     width: 100%;
   }
-  .photos img:hover {
-    display: none;
-  }
+ 
   .poems p{
     width: 80%;
     margin-left: 10%;
@@ -149,14 +150,6 @@
 }
 
 @media (max-width: 400px) {
-
-
-  .photos {
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .button span {
     font-size: 15px;
@@ -402,8 +395,8 @@ div .img {
 }
 
 .photos img:hover {
-  transform: scale(1.5);
-  transition: .3s ease-in-out;
+  transform: scale(1.9);
+  transition: .9s ease-in-out;
 }
 
 .videos {
@@ -637,5 +630,5 @@ div .img {
 
 .picsHover:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.025);
 }
